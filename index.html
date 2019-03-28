@@ -4,33 +4,28 @@
         <title>My Web Page</title>
     </head>
     <body>
-        <h2>Table of Content</h2>
-        <ul>
-            <li><a href="#section1">Go to Section 1</a></li>
-            <li><a href="#section2">Go to Section 2</a></li>
-            <li><a href="#section3">Go to Section 3</a></li>
-        </ul>
-        <h2 id="section1">Section 1</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum quasi porro eligendi, soluta voluptatem adipisci sint veniam, aut molestias illum inventore minus nemo unde, iusto quos ullam quo nobis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eum numquam, libero commodi itaque sunt recusandae quam! Dignissimos pariatur illum deleniti similique quod nam a facilis voluptatum! Doloribus, reiciendis sed!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore unde quia, error ipsum dolores animi, praesentium aspernatur asperiores blanditiis perferendis quis sapiente, ab quae reprehenderit quidem quo ducimus autem rerum.
-        </p>
+       <form>
+           <div>
+               <p>Enter Name:</p>
+               <input name="name" id="Name" type="text" placeholder="Your Name">
+               <p>Enter Password:</p>
+               <input name="password" id="Password" type="password" placeholder="Enter your password">
+           </div>
+                <P>Which department are you from??</P>
+                <input name="department"  type="radio" value="cse">CSE 
+                <input name="department"  type="radio" value="bba">BBA
+                <input name="department"  type="radio" value="eee">EEE
+           <div>
+               <p>Name of the University: </p>
+               <input type="text" name="universityName" list="uniName" placeholder="University Name">
+               <datalist id="uniName">
+                   <option value="University Of Liberal Arts, Bangladesh(ULAB)">
+                   <option value="North South University(NSU)">
+                   <option value="Independnet University Bangladesh(IUB)">   
+                    <option value="East West University(EWU)"></option>    
+               </datalist>
 
-        <h2 id="section2">Section 2</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum quasi porro eligendi, soluta voluptatem adipisci sint veniam, aut molestias illum inventore minus nemo unde, iusto quos ullam quo nobis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eum numquam, libero commodi itaque sunt recusandae quam! Dignissimos pariatur illum deleniti similique quod nam a facilis voluptatum! Doloribus, reiciendis sed!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore unde quia, error ipsum dolores animi, praesentium aspernatur asperiores blanditiis perferendis quis sapiente, ab quae reprehenderit quidem quo ducimus autem rerum.
-        </p>
-        
-
-        <h2 id="section3">Section 3</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum quasi porro eligendi, soluta voluptatem adipisci sint veniam, aut molestias illum inventore minus nemo unde, iusto quos ullam quo nobis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eum numquam, libero commodi itaque sunt recusandae quam! Dignissimos pariatur illum deleniti similique quod nam a facilis voluptatum! Doloribus, reiciendis sed!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore unde quia, error ipsum dolores animi, praesentium aspernatur asperiores blanditiis perferendis quis sapiente, ab quae reprehenderit quidem quo ducimus autem rerum.
-        </p>
-        
+           </div>
+       </form> 
     </body>
 </html>
