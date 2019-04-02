@@ -1,98 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Web Page</title>
-    </head>
-    <style>
-
-
-
-        body {
-            width: 100wh;
-            height: 90vh;
-            color: #fff;
-            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-            background-size: 400% 400%;
-            -webkit-animation: Gradient 15s ease infinite;
-            -moz-animation: Gradient 15s ease infinite;
-            animation: Gradient 15s ease infinite;
-        }
-
-        @-webkit-keyframes Gradient {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        @-moz-keyframes Gradient {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        @keyframes Gradient {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        h1,
-        h6 {
-            font-family: 'Open Sans';
-            font-weight: 300;
-            text-align: center;
-            position: absolute;
-            top: 45%;
-            right: 0;
-            left: 0;
-        }
-            p{
-                font-size: large;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-align: justify;
-            }
-        </style>
-    <body>
-       <form>
-           <div>
-               <p>Enter Name:</p>
-               <input name="name" id="Name" type="text" placeholder="Your Name">
-               <p>Enter Password:</p>
-               <input name="password" id="Password" type="password" placeholder="Enter your password">
-           </div>
-                <P>Which department are you from??</P>
-                <input name="department"  type="radio" value="cse">CSE 
-                <input name="department"  type="radio" value="bba">BBA
-                <input name="department"  type="radio" value="eee">EEE
-           <div>
-               <p>Name of the University: </p>
-               <input type="text" name="universityName" list="uniName" placeholder="University Name">
-               <datalist id="uniName">
-                   <option value="University Of Liberal Arts, Bangladesh(ULAB)">
-                   <option value="North South University(NSU)">
-                   <option value="Independnet University Bangladesh(IUB)">   
-                    <option value="East West University(EWU)"></option>    
-               </datalist>
-
-           </div>
-       </form> 
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <h1>Hello World!</h1>
+        <h2>A few facts about the world we live in.</h2>
+    </header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/800px-The_Earth_seen_from_Apollo_17.jpg" width="400">
+    <main>
+        <h2>Some General information about The Earth.</h2>
+    <ul title="infoAboutEarth">
+                <li>Equatorial Diameter:12,756 km</li>
+                <li>Polar Diameter:	12,714 km</li>
+                <li>Mass:	5.97 x 10^24 kg</li>
+                <li>Moons:	1 <sup><b>(The Moon)</b></sub></li>
+                <li>Orbit Distance:	149,598,262 km (1 AU)</li>
+                <li>Orbit Period:	365.24 days</li>
+                <li>Surface Temperature:	-88 to 58°C</li>
+    </ul>
+    
+    <p><h3><b>Top Ten Facts About The Earth.</b></h3></p>
+    <ol type="1"><h4>
+        <li>Plate Tectonics Keep the Planet Comfortable</li><br>
+        <li> Earth is Almost a Sphere:</li><br>
+        <li> Earth is Mostly Iron, Oxygen and Silicon</li><br>
+        <li>70% of the Earth’s Surface is Covered in Water</li><br>
+        <li>The Earth’s Atmosphere Extends to a Distance of 10,000 km</li><br>
+        <li>The Earth’s Molten Iron Core Creates a Magnetic Field</li><br>
+        <li>Earth Doesn’t Take 24 Hours to Rotate on its Axis</li><br>
+        <li>A year on Earth isn’t 365 days</li><br>
+        <li>Earth has 1 Moon and 2 Co-Orbital Satellites</li><br>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/yThdl3fVuaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <li>Earth is the Only Planet Known to Have Life</li></h4>
+    </ol>
+    </main>
+</body>
 </html>
