@@ -9,8 +9,17 @@
     <style type="text/css">
 
         body{
-            color:green;
+            color:rgb(0, 60, 255);
             background-image: url("https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?cs=srgb&dl=abstract-art-artistic-247676.jpg&fm=jpg")
+        }
+        .info{
+            color:skyblue;
+        }
+        .fact{
+            color:skyblue;
+        }
+        .tableRow{
+            color:skyblue;
         }
     </style>
 
@@ -19,12 +28,12 @@
     <header>
         <h1>Hello World!</h1>
         <iframe align = "right" width="400" height="300" src="https://www.youtube.com/embed/yThdl3fVuaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <h2 >A few facts about the world we live in.</h2>
+        <h2 id="bazinga" >A few facts about the world we live in.</h2>
     </header>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/800px-The_Earth_seen_from_Apollo_17.jpg" width="250">
     <main>
         <hr>
-        <h2>Some General information about The Earth.</h2>
+        <h2 class="info">Some General information about The Earth.</h2>
     <ul title="infoAboutEarth">
                 <li>Equatorial Diameter:12,756 km</li>
                 <li>Polar Diameter:	12,714 km</li>
@@ -35,7 +44,7 @@
                 <li>Surface Temperature:	-88 to 58°C</li>
     </ul>
     <hr>
-    <p><h3><b>Top Ten Facts About The Earth.</b></h3></p>
+    <p><h3 class="fact"><b>Top Ten Facts About The Earth.</b></h3></p>
     <ol><h4>
         <li>Plate Tectonics Keep the Planet Comfortable</li><br>
         <li> Earth is Almost a Sphere:</li><br>
@@ -52,7 +61,7 @@
     
     <table>
         <thead>
-                <tr>
+                <tr class="tableRow">
                         <th>Name</th>
                         <th>Distance <br> from the sun</th>
                         <th>Number <br> of Moon</th>
