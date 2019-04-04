@@ -13,27 +13,33 @@
             background-image: url("https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?cs=srgb&dl=abstract-art-artistic-247676.jpg&fm=jpg")
         }
         .info{
-            color:skyblue;
+            text-decoration: underline;
         }
         .fact{
             color:skyblue;
         }
         .tableRow{
-            color:skyblue;
+            color:darkred;
+        }
+        .HelloSize{
+            font: bolder;
+            color: yellowgreen;
+            font-size: 120%;
+            outline-width: 10px;
         }
     </style>
 
 </head>
 <body>
     <header>
-        <h1>Hello World!</h1>
+        <h1 class="HelloSize">Hello World!</h1>
         <iframe align = "right" width="400" height="300" src="https://www.youtube.com/embed/yThdl3fVuaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
         <h2 id="bazinga" >A few facts about the world we live in.</h2>
     </header>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/800px-The_Earth_seen_from_Apollo_17.jpg" width="250">
     <main>
         <hr>
-        <h2 class="info">Some General information about The Earth.</h2>
+        <h2 class="info">Some <span class="tableRow">General information</span> about The Earth.</h2>
     <ul title="infoAboutEarth">
                 <li>Equatorial Diameter:12,756 km</li>
                 <li>Polar Diameter:	12,714 km</li>
@@ -73,7 +79,7 @@
     <tbody>
         
         <tr>
-                <td>Jupiter</td>
+                <td class="HelloSize">Jupiter</td>
                 <td>778.5 million km</td>
                 <td>67</td>
                 <td>Yes</td>
@@ -81,7 +87,7 @@
 
         </tr>
         <tr>
-                <td>Mars</td>
+                <td class="HelloSize">Mars</td>
                 <td>227.9 million km</td>
                 <td>2</td>
                 <td>Yes</td>
