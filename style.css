@@ -1,11 +1,12 @@
 
 body {
-    background: linear-gradient(270deg, #f5f5f5, #759799, #303030);
-background-size: 600% 600%;
-
--webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+    background: linear-gradient(202deg, #0ec898, #000000, #0d8e73);
+    background-size: 600% 600%;
+    
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
@@ -21,7 +22,6 @@ animation: AnimationName 30s ease infinite;
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
 }
 
 .clock {
