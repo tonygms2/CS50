@@ -1,0 +1,74 @@
+
+        body{
+            color:rgb(0, 60, 255);
+            background-image: url("https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?cs=srgb&dl=abstract-art-artistic-247676.jpg&fm=jpg")
+        }
+        .info{
+            text-decoration: underline;
+        }
+        .fact{
+            color:skyblue;
+        }
+        .tableRow{
+            color:darkred;
+        }
+        .HelloSize{
+            font: bolder;
+            color: yellowgreen;
+            font-size: 120%;
+            outline-width: 10px;
+        }
+        #first-section{
+            color:violet;
+            font-size: 20px;
+            text-align: center;
+        }
+        #second-section{
+            color: darkmagenta;
+            font-size: 25px;
+            text-align: center;
+            background-color: rgb(14, 18, 20);
+            width: 100%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ol{
+            list-style-type: none;
+        }
+        #header-section{
+            text-align: center;
+            text-decoration-style: dashed;
+            font-size: 25px;
+        }
+        #youtube-video{
+            width: 400;
+            height: 300;
+            align-content: center;
+        }
+        #giphy-embed{
+            align-content: center;
+        }
+        #last-table{
+            align-items: center;
+            background-color: rgb(14, 18, 20);
+            font-size: 25px;
+        }
+        #button-item{
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            left: 100;
+            top: -1240px;
+        }
+        #earth{
+            font-size: 25px;
+        }
+        #credit{
+            font-size: 10px;
+        }
+        #youtube-video{
+            position: relative;
+            top:-38px;
+        }
+ 
