@@ -1,0 +1,55 @@
+body{
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+.circle{
+    display: block;
+	width: 150px;
+	height: 150px;
+	margin: 50px auto 0;
+	border-radius: 50%;
+}
+#red-circle{
+    background: radial-gradient(circle at 65% 15%, rgb(255, 255, 255) 1px, rgb(228, 14, 14) 3%, rgb(59, 1, 1) 60%, rgb(255, 0, 55) 100%);
+    cursor: pointer;
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px) }
+    60% {-webkit-transform: translateY(-20px);}
+} 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-20px);}
+} 
+
+
+.bounce {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+#blue-circle{
+    background: radial-gradient(circle at 65% 15%, white 1px, aqua 3%, darkblue 60%, aqua 100%);  }
+/*#blue-circle:hover{
+    background: linear-gradient(202deg,rgb(2, 8, 100), rgb(177, 227, 250), rgb(2, 20, 59));
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}*/
+
+#yellow-circle{
+    background: radial-gradient(circle at 65% 15%, white 1px, rgb(255, 251, 8) 3%, rgb(83, 76, 0) 60%, rgb(255, 251, 8) 100%);
+}
+/*#red-circle:hover{
+    background: linear-gradient(202deg,rgb(99, 1, 1), rgb(255, 30, 14), rgb(88, 1, 1));
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}*/
