@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>   
-    <link rel="stylesheet" href="style1.css">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch and Graph CSV</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 </head>
 <body>
-    <div class="circle" id="red-circle"></div>
-    <div class="circle" id="blue-circle"></div>
-    <div class="circle" id="yellow-circle"></div>
+    <p id="data"></p>
+    <canvas id="chart" width="400" height="400">
 
-<script type="text/javascript">
-   window.onload = function(){   
-    var data = [];
-    document.getElementById("red-circle").onclick = function(){
-        //console.log(data);
-        data.push("red");
+    </canvas>
+    <script>
+     const xlables = [];
+     const yTemp = [];
+    chartIt();   
+    async function chartIt(){
+        await getData();
+        const ctx = document.getElementById('chart').getContext('2d');
+    
+        function random_rgba() {
+        var o = Math.round, r = Math.random, s = 255;
+       return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
     }
-    document.getElementById("blue-circle").onclick = function(){
-        //console.log(data);
-        data.push("blue");
-    }
-    document.getElementById("yellow-circle").onclick = function(){
-        //console.log(data);
-        data.push("yellow");
-    }
-    document.getElementById("show").onclick = function(){
-        var counter = 0;
-        console.log(data);
-        }
-    document.getElementById("delete").onclick = function(){
-        var counter = 0;
-        data.pop();
-        console.log(data);
-    }
-
-element = document.getElementById("red-circle");
-
-element.addEventListener("click", function(e) {
-  e.preventDefault;
-  
-  // -> removing the class
-  element.classList.remove("bounce");
-  
-  // -> triggering reflow /* The actual magic */
-  // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
-  element.offsetWidth = element.offsetWidth;
-  
-  // -> and re-adding the class
-  element.classList.add("bounce");
-}, false);
-
-
-
-
-
-
+    var color1 = random_rgba();
+        const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: xlables,
+            datasets: [
+            {
+                label: 'Global Average Temperature',
+                data: yTemp,
+                backgroundColor: [
+                    color1],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)'],
+                borderWidth: 1
+            }
+            ]
+        },
+    }); 
    }
 
-</script>
-<button id="show">Show Array</button>
-<button id="delete">Delete Array</button>
-<div id="MyClockDisplay" class="clock"></div>
+
+        async function getData(){
+            const response = await fetch("ZonAnn.Ts+dSST.csv");
+            const text = await response.text();
+            const table = text.split('\n').slice(1);
+            table.forEach(row=>{
+                const columns = row.split(',');
+                const year = columns[0];
+                xlables.push(year);
+                const temp = columns[1];
+                yTemp.push(parseFloat(temp)+14);
+                console.log(year,temp);
+            })
+     }
+    </script>
 </body>
 </html>
